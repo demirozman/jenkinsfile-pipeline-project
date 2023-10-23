@@ -3,16 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "OZMAN Reinvent Yourself"
-                sh 'echo using shell within Jenkinsfile'
-                echo 'Not using shell in the Jenkinsfile'
+                echo 'Compiling the java source code'
+                sh 'javac Hello.java'
             }
         }
-        stage ('run') {
+        stage('run') {
             steps {
-                echo 'Application works'
-                sh 'python3 --version'
-                sh 'python3 pipeline.py'
+                echo 'Running the compiled java code.'
+                sh 'java Hello'
             }
         }
     }
