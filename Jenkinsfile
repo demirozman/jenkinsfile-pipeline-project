@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "OZMAN Reinvent Yourself"
                 sh 'echo using shell within Jenkinsfile'
-                echo 'not using shell in the Jenkinsfile'
+                echo 'Not using shell in the Jenkinsfile'
             }
         }
     }
