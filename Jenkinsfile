@@ -1,9 +1,9 @@
 pipeline {
     agent any {
         stages ('build') {
-            echo "My Analog Clock"
+            echo "Clarusway_Way to Reinvent Yourself"
             sh 'echo using shell within Jenkinsfile'
-            echo "nit using shell in the Jenkinsfile"
+            echo 'not using shell in the Jenkinsfile'
         }
     }
 }
